@@ -1,9 +1,5 @@
 body {
-  background-color: skyblue;
-}
-
-ul.photos li img{
-  max-width: 100%;
+  background-color: black;
 }
 
 ul.photos {
@@ -11,7 +7,22 @@ ul.photos {
   flex-wrap: wrap;
 }
 
+ul.photos li.wide {
+  width: 616px;
+}
+
 ul.photos li {
   width: 300px;
-  display: inline-block;
+  height: 300px;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 8px;
+}
+
+ul.photos li img{
+  padding: 30px;
+  max-width: 100%;
 }
