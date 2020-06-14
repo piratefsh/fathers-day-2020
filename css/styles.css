@@ -21,9 +21,16 @@ body {
   padding: 0;
 }
 
+article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ul.photos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 ul.photos li.wide {
@@ -50,7 +57,7 @@ ul.photos li img{
 }
 
 ul.photos li.title-card {
-  background: linear-gradient(90deg, blue, teal);
+  background: linear-gradient(45deg, blue, red);
   z-index: 100;
   border: 10px solid white;
 }
