@@ -1,3 +1,9 @@
+:root {
+  --rot: 30deg;
+  --posx: 0px;
+  --posy: 0px;
+}
+
 body {
   background-color: black;
 }
@@ -20,6 +26,8 @@ ul.photos li {
   justify-content: center;
   background-color: white;
   margin: 8px;
+
+  transform: rotate(var(--rot)) translate(var(--posx), var(--posy))
 }
 
 ul.photos li img{
