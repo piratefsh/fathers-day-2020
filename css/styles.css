@@ -37,7 +37,7 @@ ul.photos li.wide {
   width: 616px;
 }
 
-@media (max-width: 360px){
+@media (max-width: 600px){
   ul.photos li.wide {
     width: 300px;
   }
