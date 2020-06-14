@@ -37,12 +37,6 @@ ul.photos li.wide {
   width: 616px;
 }
 
-@media (max-width: 600px){
-  ul.photos li.wide {
-    width: 300px;
-  }
-}
-
 ul.photos li {
   width: 300px;
   height: 300px;
@@ -60,6 +54,15 @@ ul.photos li {
 
 ul.photos li img{
   max-width: 100%;
+}
+
+@media (max-width: 400px){
+  ul.photos li.wide {
+    width: 280px;
+  }
+  ul.photos li {
+    width: 280px
+  }
 }
 
 ul.photos li.title-card {
