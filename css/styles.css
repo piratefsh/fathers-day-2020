@@ -55,10 +55,10 @@ ul.photos li {
   z-index: var(--zindex);
   transform: rotate(var(--rot)) translate(var(--posx), var(--posy));
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.8);
+  padding: 30px;
 }
 
 ul.photos li img{
-  padding: 30px;
   max-width: 100%;
 }
 
