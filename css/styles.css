@@ -66,4 +66,15 @@ ul.photos li.title-card {
   background: linear-gradient(45deg, blue, red);
   z-index: 100;
   border: 10px solid white;
+	text-align: center;
+}
+
+ul.photos li.title-card p {
+  font-size: 2em;
+	font-family: 'Crafty Girls', cursive;
+}
+
+ul.photos li.title-card h1 {
+  font-size: 4em;
+	font-family: 'Crafty Girls', cursive;
 }
