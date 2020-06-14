@@ -7,7 +7,8 @@ const random = (start, end) => {
 }
 
 photos.forEach((photo) => {
-  photo.style.setProperty('--rot', `${random(-15, 15)}deg`);
-  photo.style.setProperty('--posx', `${random(-40, 40)}px`);
-  photo.style.setProperty('--posy', `${random(-40, 40)}px`);
+  photo.style.setProperty('--rot', `${random(-10, 10)}deg`);
+  photo.style.setProperty('--posx', `${random(-50, 50)}px`);
+  photo.style.setProperty('--posy', `${random(-50, 50)}px`);
+  photo.style.setProperty('--zindex', `${random(1, 5)}px`);
 })

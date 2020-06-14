@@ -2,10 +2,23 @@
   --rot: 30deg;
   --posx: 0px;
   --posy: 0px;
+  --z-index: 1;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+html {
+  background: linear-gradient(red, blue, green, teal);
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 ul.photos {
@@ -26,11 +39,18 @@ ul.photos li {
   justify-content: center;
   background-color: white;
   margin: 8px;
-
-  transform: rotate(var(--rot)) translate(var(--posx), var(--posy))
+  z-index: var(--zindex);
+  transform: rotate(var(--rot)) translate(var(--posx), var(--posy));
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.8);
 }
 
 ul.photos li img{
   padding: 30px;
   max-width: 100%;
+}
+
+ul.photos li.title-card {
+  background: linear-gradient(90deg, blue, teal);
+  z-index: 100;
+  border: 10px solid white;
 }
