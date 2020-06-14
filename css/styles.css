@@ -1,5 +1,5 @@
 :root {
-  --rot: 30deg;
+  --rot: 0deg;
   --posx: 0px;
   --posy: 0px;
   --z-index: 1;
@@ -35,6 +35,12 @@ ul.photos {
 
 ul.photos li.wide {
   width: 616px;
+}
+
+@media (max-width: 360px){
+  ul.photos li.wide {
+    width: 300px;
+  }
 }
 
 ul.photos li {
