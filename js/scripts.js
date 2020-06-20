@@ -15,7 +15,7 @@ photos.forEach((photo) => {
 
 const slideshows = document.querySelectorAll('.slideshow');
 
-slideshows.forEach((ss) => {
+slideshows.forEach((ss, si) => {
   let currentIndex = 0;
   const slides = ss.querySelectorAll('li');
   slides[0].classList.add('show');
@@ -27,5 +27,5 @@ slideshows.forEach((ss) => {
       }
       currentIndex++;
     })
-  }, 5 * 1000)
+  }, 5 * (1000+(300*Math.random() * slideshows.length)))
 })
