@@ -15,17 +15,23 @@ photos.forEach((photo) => {
 
 const slideshows = document.querySelectorAll('.slideshow');
 
-slideshows.forEach((ss, si) => {
-  let currentIndex = 0;
-  const slides = ss.querySelectorAll('li');
-  slides[0].classList.add('show');
-  setInterval(() => {
-    slides.forEach((s, i) => {
-      s.classList.remove('show');
-      if(currentIndex % i === 0){
-        s.classList.add('show');
-      }
-      currentIndex++;
-    })
-  }, 5 * (1000+(300*Math.random() * slideshows.length)))
-})
+if(window.location.search === "?slideshow"){
+  slideshows.forEach((ss, si) => {
+    let currentIndex = 0;
+    const slides = ss.querySelectorAll('li');
+    slides[0].classList.add('show');
+    setInterval(() => {
+      slides.forEach((s, i) => {
+        s.classList.remove('show');
+        if(currentIndex % i === 0){
+          s.classList.add('show');
+        }
+        currentIndex++;
+      })
+    }, 5 * (1000+(300*(Math.random()+0.001) * slideshows.length)))
+  })
+} else {
+  slideshows.forEach((ss, si) => {
+    ss.querySelectorAll('li')[0].classList.add('show');
+  });
+}
