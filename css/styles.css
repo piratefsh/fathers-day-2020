@@ -96,8 +96,10 @@ ul.photos li.title-card h1 {
   ul.photos li.wide {
     width: 280px;
   }
-  ul.photos li {
-    width: 280px
+  ul.photos > li {
+    width: 280px;
+    transform: rotate(calc(var(--rot)*0.7)) translate(calc(var(--posx)*0.7), calc(var(--posy)*0.7));
+
   }
 
   .slideshow li {
