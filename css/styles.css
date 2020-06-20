@@ -3,6 +3,8 @@
   --posx: 0px;
   --posy: 0px;
   --z-index: 1;
+  --img-size: 300px;
+  --img-padding: 30px;
 }
 
 h1 {
@@ -38,8 +40,8 @@ ul.photos li.wide {
 }
 
 ul.photos > li {
-  width: 300px;
-  height: 300px;
+  width: var(--img-size);
+  height: var(--img-size);
   overflow:hidden;
   display: flex;
   align-items: center;
@@ -49,7 +51,7 @@ ul.photos > li {
   z-index: var(--zindex);
   transform: rotate(var(--rot)) translate(var(--posx), var(--posy));
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.8);
-  padding: 30px;
+  padding: var(--img-padding);
 }
 
 ul.photos li img{
@@ -80,4 +82,20 @@ ul.photos li.title-card p {
 ul.photos li.title-card h1 {
   font-size: 4em;
 	font-family: 'Crafty Girls', cursive;
+}
+
+.slideshow {
+  position: relative;
+}
+.slideshow li {
+  opacity: 0;
+  position: absolute;
+  top: calc(-1 * (var(--img-size)/2));
+  left: calc(-1 * (var(--img-size)/2) + var(--img-padding)/2);
+  width: var(--img-size);
+  height: var(--img-size);
+  transition: opacity 1s;
+}
+.slideshow li.show{
+  opacity: 1;
 }
