@@ -115,3 +115,9 @@ ul.photos li.title-card h1 {
       left: calc(-1 * (var(--img-size-res)/2) + var(--img-padding)/2);
   }
 }
+
+#music-trigger{
+  padding: 12px;
+  background: #ff0066;
+  border-radius: 8px;
+}

@@ -36,3 +36,17 @@ if(true){
     ss.querySelectorAll('li')[0].classList.add('show');
   });
 }
+
+let playing = false;
+const musicTrigger = document.getElementById('music-trigger');
+musicTrigger.addEventListener('click', function(e) {
+  if(!playing){
+    musicTrigger.innerHTML="🎼🎵 Pause birthday song 🎼🎵"
+    document.getElementById('music').play()
+  } else {
+    musicTrigger.innerHTML="🎼🎵 Click for birthday song 🎼🎵"
+    document.getElementById('music').pause()
+  }
+
+  playing = !playing
+})
