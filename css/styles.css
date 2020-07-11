@@ -103,6 +103,7 @@ ul.photos li.title-card h1 {
 @media (max-width: 400px){
   ul.photos li.wide {
     width: 280px;
+    height: auto;
   }
 
   ul.photos > li {
@@ -117,6 +118,7 @@ ul.photos li.title-card h1 {
 }
 
 #music-trigger{
+  display: block;
   padding: 12px;
   background: #ff0066;
   border-radius: 8px;
