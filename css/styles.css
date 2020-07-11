@@ -13,7 +13,7 @@ h1 {
 }
 
 html {
-  background: linear-gradient(Tomato, mediumblue, SlateBlue, cornflowerblue, lightseagreen, tomato);
+  background: linear-gradient(maroon, navy, SlateBlue, cornflowerblue);
   margin: 0;
   padding: 0;
 }
@@ -59,12 +59,20 @@ ul.photos li img{
   max-width: 100%;
 }
 
+ul.photos li.title-card.top {
+  background: goldenrod;
+}
+
 ul.photos li.title-card {
-  background: linear-gradient(45deg, tomato, mediumblue);
+  color: white;
+  background: slateblue;
+  /*background: linear-gradient(45deg, maroon, tomato);*/
   z-index: 100;
   border: 10px solid white;
 	text-align: center;
 }
+
+
 
 ul.photos li.title-card p {
   font-size: 2em;

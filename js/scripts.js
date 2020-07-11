@@ -15,7 +15,8 @@ photos.forEach((photo) => {
 
 const slideshows = document.querySelectorAll('.slideshow');
 
-if(window.location.search === "?slideshow"){
+// if(window.location.search === "?slideshow"){
+if(true){
   slideshows.forEach((ss, si) => {
     let currentIndex = 0;
     const slides = ss.querySelectorAll('li');
